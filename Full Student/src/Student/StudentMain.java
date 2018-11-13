@@ -8,8 +8,8 @@ public class StudentMain {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		Intro i = new Intro();
-		String name = i.getStudentName();
 		System.out.println(i);
+		String name = i.getStudentName();
 		int id = scan.nextInt();
 		Identification myID = new Identification(name,id);
 		

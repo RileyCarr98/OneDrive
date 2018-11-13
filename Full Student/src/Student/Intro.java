@@ -8,6 +8,10 @@ public class Intro extends StudentMain {
 	@SuppressWarnings({ "resource", "unused" })
 	public Intro()
 	{
+		boolean t = false;
+		
+		do
+		{
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Welcome to my integration project! Shortly the program will prompt you "
 		+ "to type in a few requirements... Have fun~!");
@@ -26,15 +30,19 @@ public class Intro extends StudentMain {
 					+ stuName.substring(1).toLowerCase();
 			//Above is very complicated way to Capitalize the first letter of the name using the 
 			//String method .toUppercase and .toLowerCase
-			System.out.println("Hello " + stuName + "!");
+			System.out.println("Hello " + stuName + "! Please enter your ID Number(If you do not "
+					+ "have an ID Number"+", one will be provided for you, just input a 0)");
+			t = true;
 		}
 		else {
 			System.out.println("I didnt get that.");
-			
+			t = false;
+			 }
+		}
+		while (t = false);
 		}
 		
-		
-	}
+	
 	public void setStudentName(String stuName)
 	{
 		stuName = studentName;

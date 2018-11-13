@@ -4,10 +4,7 @@ import java.util.*;
 public class Identification extends StudentMain{
 	public int idNum;
 	public static void main(String[] args) {
-		Intro i = new Intro();
-		String name = i.getStudentName();
-		System.out.println("Please enter your ID Number(If you do not have an ID Number" +
-				", one will be provided for you, just input a 0)");
+		
 		Scanner scan = new Scanner(System.in);
 		int idNum = scan.nextInt();
 
@@ -32,6 +29,8 @@ public class Identification extends StudentMain{
 
 	public Identification(String studentName, int idNum)
 	{
+		System.out.println();
+		
 		System.out.println("Student Name: " + name);
 		System.out.println("Student id Number: " + idNum);
 		
