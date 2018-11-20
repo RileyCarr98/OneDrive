@@ -33,6 +33,7 @@ public class Intro extends StudentMain {
 			System.out.println("Hello " + stuName + "! Please enter your ID Number(If you do not "
 					+ "have an ID Number"+", one will be provided for you, just input a 0)");
 			t = true;
+			setStudentName(stuName);
 		}
 		else {
 			System.out.println("I didnt get that.");
@@ -45,11 +46,11 @@ public class Intro extends StudentMain {
 	
 	public void setStudentName(String stuName)
 	{
-		stuName = studentName;
+		this.stuName = stuName;
 	}
 	public String getStudentName()
 	{
-		return studentName;
+		return stuName;
 	}
 	
 }
