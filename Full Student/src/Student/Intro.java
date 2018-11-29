@@ -8,7 +8,7 @@ import java.util.*;
  * @author rmcarr4835
  */
 public class Intro extends StudentMain {
-	  /*
+	  /**
 	   * The first and last name of this student.
 	   */
 	public String studentName;
@@ -52,7 +52,7 @@ public class Intro extends StudentMain {
 		}
 		
 	
-	 /*
+	 /**
 	   * Sets the name of this Student.
 	   * @param stuName This Student's new name.  
 	   * Should include both first and last name.
@@ -61,7 +61,7 @@ public class Intro extends StudentMain {
 	{
 		this.stuName = stuName;
 	}
-	  /*
+	 /**
 	   * Gets the first and last name of this Student.
 	   * @return this Student's name.
 	   */
