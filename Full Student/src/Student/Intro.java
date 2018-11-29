@@ -2,7 +2,15 @@ package Student;
 import java.util.*;
 
 
+/**
+ * Represents a Students name.
+ * Gets and Sets the students name.
+ * @author rmcarr4835
+ */
 public class Intro extends StudentMain {
+	  /*
+	   * The first and last name of this student.
+	   */
 	public String studentName;
 	public String stuName;
 	@SuppressWarnings({ "resource", "unused" })
@@ -44,10 +52,19 @@ public class Intro extends StudentMain {
 		}
 		
 	
+	 /*
+	   * Sets the name of this Student.
+	   * @param stuName This Student's new name.  
+	   * Should include both first and last name.
+	   */
 	public void setStudentName(String stuName)
 	{
 		this.stuName = stuName;
 	}
+	  /*
+	   * Gets the first and last name of this Student.
+	   * @return this Student's name.
+	   */
 	public String getStudentName()
 	{
 		return stuName;

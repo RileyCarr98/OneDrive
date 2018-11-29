@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class StudentMain {
 	public String studentName;
 	
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		Intro i = new Intro();
@@ -21,23 +22,30 @@ public class StudentMain {
 		System.out.println("Student Name: " + studentName);
 		System.out.println("Student id Number: " + id);
 		
-		//Identification myID = new Identification(name,id);
-		
-	//      System.out.println(myID);
-	    System.out.println("What were your last 5 quiz grades?");
+	    System.out.println("Copy and Paste this for a 2D Array example!(Finds the max sum of "
+	    		+ "an hourglass)\r\n"
+	    	+   "1 1 1 0 0 0\r\n" + 
+	    		"0 1 0 0 0 0\r\n" + 
+	    		"1 1 1 0 0 0\r\n" + 
+	    		"0 0 2 4 4 0\r\n" + 
+	    		"0 0 0 2 0 0\r\n" + 
+	    		"0 0 1 2 4 0"); 
+	    //Creates an instance and calls the main method of the class
+	    twoDarray t = new twoDarray();
+	    t.myMethod(args);
 	    
-	    int count = 5;
-	    int[] grades = new int[count];
+	    Polymorphism p = new Polymorphism();
 	    
-	    for (int b = 0; b <= count; b++)
-	    {
-	    	grades[count] = scan.nextInt();
-	    	b++;
-
-	    }
-	    System.out.println(grades[count]);
+	    System.out.println("Next up, we have an example of polymorphism with animals. It creates an"
+	    + "\r\nArray with a cat and a dog and makes their respective noise with a noise method.");
+	    System.out.println();
 	    
-	      scan.close();
+	    p.polyMain(args);
+	    System.out.println();
+	    Queues q = new Queues();
+	    q.queueMain(args);
+	    
+	    scan.close();
 	}
 	
 
